@@ -19,6 +19,8 @@
 		// Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
 
+		#include "PopCommon.cginc"
+
 		sampler2D _MainTex;
 
 		struct Input {
@@ -61,7 +63,7 @@
 			uv.y = Varying;
 
 			float LerpTime = tex2D (_MainTex, uv).x;
-			return lerp( b, c, LerpTime );
+			return LerpRgba( b, c, LerpTime );
 
 			return float4( uv.x, uv.y, 0, 1 );
 		}

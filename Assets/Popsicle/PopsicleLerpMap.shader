@@ -16,6 +16,7 @@
 
 		// Use shader model 3.0 target, to get nicer looking lighting
 		#pragma target 3.0
+		#include "PopCommon.cginc"
 
 		sampler2D _MainTex;
 
@@ -56,7 +57,7 @@
 			float LerpTime = Varying;
 
 			//a = float4( uv.x, uv.y, 0, 1 );
-			return lerp( c, b, LerpTime );
+			return LerpRgba( c, b, LerpTime );
 		}
 
 		void surf (Input IN, inout SurfaceOutputStandard o) {

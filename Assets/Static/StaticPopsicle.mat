@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Popsicle6
+  m_Name: StaticPopsicle
   m_Shader: {fileID: 4800000, guid: 3a3fa337c78224f6c95aa373e354bebf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -143,8 +143,8 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 0, b: 0.10344792, a: 1}
+        second: {r: 0, g: 0.25055775, b: 0.5955882, a: 1}
       data:
         first:
           name: Colour2
-        second: {r: 0.07586241, g: 0, b: 1, a: 1}
+        second: {r: 1, g: 0.007352948, b: 0.89046645, a: 1}
